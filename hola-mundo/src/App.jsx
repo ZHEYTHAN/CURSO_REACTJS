@@ -1,22 +1,30 @@
 import "./App.css";
+import { XFollowCard } from "./XFollowCard";
 
 export function App() {
+  const format = (userName) => ` @${userName}`;
+
   return (
-    <article className="x-follow-card">
-      <header className="x-follow-card-header">
-        <img
-          className="x-follow-card-avatar"
-          src="https://unavatar.io/kikobeats"
-          alt="El avatar"
-        />
-        <div className=".x-follow-card-info">
-          <strong>Pepito Perez</strong>
-          <span className=".x-follow-card-infoUserName">@AndresPaez</span>
-        </div>
-      </header>
-      <aside>
-        <button className="x-follow-card-button">Seguir</button>
-      </aside>
-    </article>
+    <section className="XFollow-space">
+      <XFollowCard
+        formatUserName={format}
+        isFollowing
+        userName={"ZHEYTHAN"}
+        name={"Andres Paez"}
+      />
+      <XFollowCard
+        formatUserName={format}
+        isFollowing
+        userName={"kraken"}
+        name={"rosa"}
+      />
+      <XFollowCard
+        formatUserName={format}
+        isFollowing
+        userName={"magenta "}
+        name={"fight Night"}
+      />
+      ;
+    </section>
   );
 }
