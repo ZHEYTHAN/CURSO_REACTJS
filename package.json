@@ -1,5 +1,13 @@
 {
   "dependencies": {
-    "vite": "^6.0.5"
+    "build": "^0.1.4",
+    "vite": "^6.0.5",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
